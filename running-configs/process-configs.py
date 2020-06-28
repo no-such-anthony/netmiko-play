@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 from multiprocessing import Pool
 from netmiko import ConnectHandler
 from netmiko import NetMikoTimeoutException, NetMikoAuthenticationException
