@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-from gevent import monkey; monkey.patch_all()
 from concurrent.futures import ThreadPoolExecutor
 from netmiko import ConnectHandler
 from netmiko import NetMikoTimeoutException, NetMikoAuthenticationException
