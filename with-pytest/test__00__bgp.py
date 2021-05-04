@@ -25,6 +25,9 @@ def test_bgp_summary(device,neighbor):
 
     if state_pfxrcd in ['Idle','Active']:
         pytest.fail(f'Inactive neighbor.')
+        
+    elif state_pfxrcd == 'Idle (Admin)':
+        pytest.fail(f'Neighbor administratively shutdown.')
 
     elif state_pfxrcd == '0':
         pytest.fail(f'Neighbor up, but no prefixes received.')
